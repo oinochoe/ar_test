@@ -841,7 +841,7 @@ function findIntersectionAndButtonHandler() {
             document.getElementById('narration-panel').style.display = 'flex';
             document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-water.svg';
             $('.scroll-left p').addClass( 'on');
-            document.getElementById('tts-text').innerHTML = '鎬摝旎�, 锟诫ó昙锟� 锟诫崏牍燂拷锟� 鑷眷嚢欷� 锟疥京旯効锟界敱褕韷达锟� 锟斤拷 韪半崏肟� 锟解壀锟� 铵♀懁韤庯拷攵倦 锟诫氦雼旓拷鞉栯挭锟斤拷';
+            document.getElementById('tts-text').innerHTML = '閹煄鎽濇棊锟�, 閿熻贸鏄欘偓顫ｉ敓锟� 閿熻宕忕墠鐕傛嫹閿燂拷 閼风湻鍤㈡锟� 閿熺枼浜棷顔藉姽閿熺晫鏁辫闊疯揪顫ｉ敓锟� 閿熸枻鎷� 闊崐宕忚偀锟� 閿熻В澹€閿燂拷 閾碘檧鎳侀煠搴嫹鏀靛€︻潎 閿熻姘﹂浖鏃撴嫹闉夋牤鎸敓鏂ゆ嫹';
 
             // Play sound for Water
             magicDisplaySound.volume = 0.6;
@@ -997,7 +997,7 @@ function findIntersectionAndButtonHandler() {
             document.getElementById('narration-panel').style.display = 'flex';
             document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-magic-space.svg';
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '锟诫惐鞓ｆ€拷 锟斤拷 锟斤拷 锟届剮甑癸拷锟� 瑾橂獌霑� 锟诫惐鞓ｆ€拷';
+            document.getElementById('tts-text').innerHTML = '閿熻鎯愰灀锝嗏偓顭掓嫹 閿熸枻鎷� 閿熸枻鎷� 閿熷眾鍓攽鐧告嫹閿燂拷 鐟炬﹤鐛岄湋锟� 閿熻鎯愰灀锝嗏偓顭掓嫹';
 
             openMagicDoor();
             break;
@@ -1075,7 +1075,7 @@ function findIntersectionAndButtonHandler() {
             document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-knok.svg';
 
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '锟诫獏瓴曪霘憹婵★拷 锟诫惐鞓ｆ€拷 锟诫寑锟� 锟诫氦鞌�';
+            document.getElementById('tts-text').innerHTML = '閿熻鐛忕摯鏇潚闇橆垺鎲瑰┑鈽呮嫹 閿熻鎯愰灀锝嗏偓顭掓嫹 閿熻瀵戦敓锟� 閿熻姘﹂瀸锟�';
 
             // 4. Update buttons
             mesh.remove(btnOpenVideo);
@@ -1178,7 +1178,7 @@ function findIntersectionAndButtonHandler() {
             document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-move-basket.svg';
 
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '锟姐吋爰囷拷锟� 锟诫鞌狅拷锟� 锟届暪鞓辩尫锟� 韫傠嬁锟�';
+            document.getElementById('tts-text').innerHTML = '閿熷鍚嬬埌鍥锋嫹閿燂拷 閿熻顕熼瀸鐙呮嫹閿燂拷 閿熷眾鏆灀杈╁矮閿燂拷 闊偁瀣侀敓锟�';
 
             mesh.remove(btnOpenRightDoor);
 
@@ -1311,7 +1311,7 @@ function findIntersectionAndButtonHandler() {
             document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-uv.svg';
 
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '锟诫惐鞓ｆ€雰� 鎬摝毽帮В锟届牂婀诧拷';
+            document.getElementById('tts-text').innerHTML = '閿熻鎯愰灀锝嗏偓顭忣暢闆帮拷 閹煄鎽濇甯掗敓灞婄墏濠€璇ф嫹';
 
             break;
           case 'UVClose':
@@ -1366,7 +1366,7 @@ function findIntersectionAndButtonHandler() {
             document.getElementById('narration-panel').style.display = 'flex';
             document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-folding.svg';
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '锟届剮旎拷雽€甑� 鎬硹雱″獩靾堨敔 閬猴拷锟届嚚锟� 锟斤拷 锟届暪鞓辩尫锟� 韫傠嬁锟�';
+            document.getElementById('tts-text').innerHTML = '閿熷眾鍓棊顖ゆ嫹闆解偓鐢戯拷 閹煃纭归洷鈥崇崺闈惧牗鏁� 闁尨鎷烽敓灞婂殮閿燂拷 閿熸枻鎷� 閿熷眾鏆灀杈╁矮閿燂拷 闊偁瀣侀敓锟�';
 
             break;
           case 'FoldingShelfClose':
@@ -1422,7 +1422,7 @@ function findIntersectionAndButtonHandler() {
             document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-multi-corner.svg';
 
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '锟疥京鞌狅拷锟� 绉混剰飓帮拷旯嗢摚 韫傠嬁锟�';
+            document.getElementById('tts-text').innerHTML = '閿熺枼浜瀸鐙呮嫹閿燂拷 缁夋贩鍓伴甯嫹鏃棦鎽� 闊偁瀣侀敓锟�';
 
             break;
           case 'MultiCornerClose':
@@ -1478,7 +1478,7 @@ function findIntersectionAndButtonHandler() {
             document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-large-basket.svg';
 
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '锟斤拷 锟解懜鞗撅拷锟� 锟届剮甓旇珱攵诫巹锟斤拷';
+            document.getElementById('tts-text').innerHTML = '閿熸枻鎷� 閿熻В鎳滈灄鎾呮嫹閿燂拷 閿熷眾鍓敁鏃囩彵鏀佃宸归敓鏂ゆ嫹';
 
             break;
           case 'LargeBasketClose':
@@ -1552,7 +1552,7 @@ window.onload = () => {
     switchTab('inside')
   });
   tab3.addEventListener('click', () => {
-    switchTab('cooling');
+    switchTab('inside');
   });
 
   tab4.addEventListener('click', () => rotateAndScale());

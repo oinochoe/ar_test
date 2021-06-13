@@ -1,6 +1,6 @@
 @font-face {
   font-family: "LGSmHaB";
-  src: url("../assets/fonts/LGSmHaTB_0.woff2") format("woff2"), url("../assets/fonts/LGSmHaTL_0.woff2") format("woff2"), url("../assets/fonts/LGSmHaTR_0.woff2") format("woff2"), url("../assets/fonts/LGSmHaTSB_0.woff2") format("woff2"), url("../assets/fonts/LGSmHaB_v1.4_151215.ttf") format("truetype"), url("../assets/fonts/LGSmHaL_v1.4_151215.ttf") format("truetype"), url("../assets/fonts/LGSmHaR_v1.4_151215.ttf") format("truetype"), url("../assets/fonts/LGSmHaSB_v1.4_151215.ttf") format("truetype"), url("../assets/fonts/LGSmHaTB_0.ttf") format("truetype"), url("../assets/fonts/LGSmHaTL_0.ttf") format("truetype"), url("../assets/fonts/LGSmHaTR_0.ttf") format("truetype"), url("../assets/fonts/LGSmHaTSB_0.ttf") format("truetype");
+  src: url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaTB_0.woff2") format("woff2"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaTL_0.woff2") format("woff2"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaTR_0.woff2") format("woff2"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaTSB_0.woff2") format("woff2"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaB_v1.4_151215.ttf") format("truetype"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaL_v1.4_151215.ttf") format("truetype"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaR_v1.4_151215.ttf") format("truetype"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaSB_v1.4_151215.ttf") format("truetype"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaTB_0.ttf") format("truetype"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaTL_0.ttf") format("truetype"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaTR_0.ttf") format("truetype"), url("https://demo.letsee.io/confinity/assets/fonts/LGSmHaTSB_0.ttf") format("truetype");
 }
 .fade-in {
   opacity: 1;
@@ -411,7 +411,7 @@ body {
   }
 
   .slick-next:before {
-    content: url("../assets/button/btn-next.svg");
+    content: url("https://demo.letsee.io/confinity/assets/button/btn-next.svg");
   }
 
   .slick-prev {
@@ -421,7 +421,7 @@ body {
   }
 
   .slick-prev:before {
-    content: url("../assets/button/btn-prv.svg");
+    content: url("https://demo.letsee.io/confinity/assets/button/btn-prv.svg");
   }
 
   .slick-dots {
@@ -434,11 +434,11 @@ body {
 
   .slick-dots li button:before {
     font-size: 15px;
-    content: url("../assets/page-dis.svg");
+    content: url("https://demo.letsee.io/confinity/assets/page-dis.svg");
   }
 
   .slick-dots li.slick-active button:before {
-    content: url("../assets/page-on.svg");
+    content: url("https://demo.letsee.io/confinity/assets/page-on.svg");
   }
 
   #image-guide1 {
@@ -541,7 +541,7 @@ body {
   }
 
   .slick-next:before {
-    content: url("../assets/button/btn-next.svg");
+    content: url("https://demo.letsee.io/confinity/assets/button/btn-next.svg");
   }
 
   .slick-prev {
@@ -550,7 +550,7 @@ body {
   }
 
   .slick-prev:before {
-    content: url("../assets/button/btn-prv.svg");
+    content: url("https://demo.letsee.io/confinity/assets/button/btn-prv.svg");
   }
 
   .slick-dots {
@@ -563,11 +563,11 @@ body {
 
   .slick-dots li button:before {
     font-size: 15px;
-    content: url("../assets/page-dis.svg");
+    content: url("https://demo.letsee.io/confinity/assets/page-dis.svg");
   }
 
   .slick-dots li.slick-active button:before {
-    content: url("../assets/page-on.svg");
+    content: url("https://demo.letsee.io/confinity/assets/page-on.svg");
   }
 
   .image-guide {

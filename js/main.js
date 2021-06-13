@@ -14,18 +14,18 @@ let INTERSECTED,
     raycaster;
 
 // Sounds
-let clickSound                = new Audio('assets/audio/click.mp3');
-let iceSound                  = new Audio('assets/audio/ice_drop_3.m4a'),
-    magicDisplaySound         = new Audio('assets/audio/magic-display.mp3'),
-    magicSpaceDoorSound       = new Audio('assets/audio/magic-space.mp3'),
-    magicSpaceKnockOnSound    = new Audio('assets/audio/knock-on.mp3'),
-    filterSound               = new Audio('assets/audio/filter.mp3'),
-    uvSound                   = new Audio('assets/audio/uv.mp3'),
-    foldingShelfSound         = new Audio('assets/audio/folding.mp3'),
-    multiCornerSound          = new Audio('assets/audio/multi.mp3'),
-    largeBasketSound          = new Audio('assets/audio/big_basket.mp3'),
-    doorCaseSound             = new Audio('assets/audio/moving-basket.mp3'),
-    linearCompressorSound     = new Audio('assets/audio/linear.mp3');
+let clickSound                = new Audio('https://demo.letsee.io/confinity/assets/audio/click.mp3');
+let iceSound                  = new Audio('https://demo.letsee.io/confinity/assets/audio/ice_drop_3.m4a'),
+    magicDisplaySound         = new Audio('https://demo.letsee.io/confinity/assets/audio/magic-display.mp3'),
+    magicSpaceDoorSound       = new Audio('https://demo.letsee.io/confinity/assets/audio/magic-space.mp3'),
+    magicSpaceKnockOnSound    = new Audio('https://demo.letsee.io/confinity/assets/audio/knock-on.mp3'),
+    filterSound               = new Audio('https://demo.letsee.io/confinity/assets/audio/filter.mp3'),
+    uvSound                   = new Audio('https://demo.letsee.io/confinity/assets/audio/uv.mp3'),
+    foldingShelfSound         = new Audio('https://demo.letsee.io/confinity/assets/audio/folding.mp3'),
+    multiCornerSound          = new Audio('https://demo.letsee.io/confinity/assets/audio/multi.mp3'),
+    largeBasketSound          = new Audio('https://demo.letsee.io/confinity/assets/audio/big_basket.mp3'),
+    doorCaseSound             = new Audio('https://demo.letsee.io/confinity/assets/audio/moving-basket.mp3'),
+    linearCompressorSound     = new Audio('https://demo.letsee.io/confinity/assets/audio/linear.mp3');
 
 // Booleans
 let isOpenIceDrop             = false,
@@ -87,19 +87,17 @@ function initScene() {
 
   // 2. Set background for scene as image
   new THREE.RGBELoader()
-  .setDataType( THREE.UnsignedByteType )
-  .setPath( './assets/textures/' )
-  .load( 'royal_esplanade_1k.hdr', function ( texture ) {
+      .setDataType(THREE.UnsignedByteType)
+      .setPath('https://demo.letsee.io/confinity/https://demo.letsee.io/confinity/assets/textures/')
+      .load('royal_esplanade_1k.hdr', function (texture) {
+          let envMap = pmremGenerator.fromEquirectangular(texture).texture;
 
-    let envMap = pmremGenerator.fromEquirectangular( texture ).texture;
+          // scene.background = envMap;
+          scene.environment = envMap;
 
-    // scene.background = envMap;
-    scene.environment = envMap;
-
-    texture.dispose();
-    pmremGenerator.dispose();
-
-  });
+          texture.dispose();
+          pmremGenerator.dispose();
+      });
 
   // 3. Set light effects for renderer
   renderer.toneMappingExposure     = 1;
@@ -280,9 +278,9 @@ function switchTab(tab) {
       mesh.add(btnOpenVideo, btnOpenRightDoor, btnKnockOn);
 
       // 5. Change menu tab GUI.
-      document.getElementById('btn-exterior').src = 'assets/menu/ico-exterior-on.svg';
-      document.getElementById('btn-inside').src = 'assets/menu/ico-inside.svg';
-      document.getElementById('btn-cooling').src = 'assets/menu/ico-cooling.svg';
+      document.getElementById('btn-exterior').src = 'https://demo.letsee.io/confinity/assets/menu/ico-exterior-on.svg';
+      document.getElementById('btn-inside').src = 'https://demo.letsee.io/confinity/assets/menu/ico-inside.svg';
+      document.getElementById('btn-cooling').src = 'https://demo.letsee.io/confinity/assets/menu/ico-cooling.svg';
 
       $('#tab-1').css('background', '#a50634');
       $('#tab-1 p').css('color', '#ffffff');
@@ -293,7 +291,7 @@ function switchTab(tab) {
       $('#tab-3').css('background', '#ffffff');
       $('#tab-3 p').css('color', '#9b9b9b');
 
-      document.getElementById('btnRotate').src = 'assets/menu/btn-3-dtop.png';
+      document.getElementById('btnRotate').src = 'https://demo.letsee.io/confinity/assets/menu/btn-3-dtop.png';
       document.getElementById('bottom').style.display = 'flex';
       document.getElementById('controlPanel').style.display = 'none';
       document.getElementById('myElement').style.display = 'none';
@@ -327,9 +325,9 @@ function switchTab(tab) {
       });
 
       // 5. Change menu tab GUI.
-      document.getElementById('btn-exterior').src = 'assets/menu/ico-exterior.svg';
-      document.getElementById('btn-inside').src = 'assets/menu/ico-inside-on.svg';
-      document.getElementById('btn-cooling').src = 'assets/menu/ico-cooling.svg';
+      document.getElementById('btn-exterior').src = 'https://demo.letsee.io/confinity/assets/menu/ico-exterior.svg';
+      document.getElementById('btn-inside').src = 'https://demo.letsee.io/confinity/assets/menu/ico-inside-on.svg';
+      document.getElementById('btn-cooling').src = 'https://demo.letsee.io/confinity/assets/menu/ico-cooling.svg';
 
       $('#tab-1').css('background', '#ffffff');
       $('#tab-1 p').css('color', '#9b9b9b');
@@ -340,7 +338,7 @@ function switchTab(tab) {
       $('#tab-3').css('background', '#ffffff');
       $('#tab-3 p').css('color', '#9b9b9b');
 
-      document.getElementById('btnRotate').src = 'assets/menu/btn-3-dtop.png';
+      document.getElementById('btnRotate').src = 'https://demo.letsee.io/confinity/assets/menu/btn-3-dtop.png';
       document.getElementById('bottom').style.display = 'flex';
       document.getElementById('controlPanel').style.display = 'none';
       document.getElementById('myElement').style.display = 'none';
@@ -399,9 +397,9 @@ function switchTab(tab) {
       });
 
       // 5. Change menu tab GUI.
-      document.getElementById('btn-exterior').src = 'assets/menu/ico-exterior.svg';
-      document.getElementById('btn-inside').src = 'assets/menu/ico-inside.svg';
-      document.getElementById('btn-cooling').src = 'assets/menu/ico-cooling-on.svg';
+      document.getElementById('btn-exterior').src = 'https://demo.letsee.io/confinity/assets/menu/ico-exterior.svg';
+      document.getElementById('btn-inside').src = 'https://demo.letsee.io/confinity/assets/menu/ico-inside.svg';
+      document.getElementById('btn-cooling').src = 'https://demo.letsee.io/confinity/assets/menu/ico-cooling-on.svg';
 
       $('#tab-1').css('background', '#ffffff');
       $('#tab-1 p').css('color', '#9b9b9b');
@@ -412,7 +410,7 @@ function switchTab(tab) {
       $('#tab-3').css('background', '#a50634');
       $('#tab-3 p').css('color', '#ffffff');
 
-      document.getElementById('btnRotate').src = 'assets/menu/btn-3-dtop.png';
+      document.getElementById('btnRotate').src = 'https://demo.letsee.io/confinity/assets/menu/btn-3-dtop.png';
       document.getElementById('bottom').style.display = 'flex';
       document.getElementById('controlPanel').style.display = 'none';
       document.getElementById('myElement').style.display = 'none';
@@ -841,9 +839,9 @@ function findIntersectionAndButtonHandler() {
             // Show bottom narration text
             document.getElementById('message').style.display = 'none';
             document.getElementById('narration-panel').style.display = 'flex';
-            document.getElementById('lbl-bottom').src = 'assets/bottom/lbl-water.svg';
+            document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-water.svg';
             $('.scroll-left p').addClass( 'on');
-            document.getElementById('tts-text').innerHTML = '怨듦컙, �먮꼫吏� �덉빟�� 臾쇰줎 �꾩깮愿�由ш퉴吏� �� 踰덉뿉 �≪� 李⑤퀎�붾맂 �뺤닔�쒖뒪��';
+            document.getElementById('tts-text').innerHTML = '鎬摝旎�, 锟诫ó昙锟� 锟诫崏牍燂拷锟� 鑷眷嚢欷� 锟疥京旯効锟界敱褕韷达锟� 锟斤拷 韪半崏肟� 锟解壀锟� 铵♀懁韤庯拷攵倦 锟诫氦雼旓拷鞉栯挭锟斤拷';
 
             // Play sound for Water
             magicDisplaySound.volume = 0.6;
@@ -997,9 +995,9 @@ function findIntersectionAndButtonHandler() {
             // Show bottom narration text
             document.getElementById('message').style.display = 'none';
             document.getElementById('narration-panel').style.display = 'flex';
-            document.getElementById('lbl-bottom').src = 'assets/bottom/lbl-magic-space.svg';
+            document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-magic-space.svg';
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '�됱옣怨� �� �� �섎굹�� 誘몃땲 �됱옣怨�';
+            document.getElementById('tts-text').innerHTML = '锟诫惐鞓ｆ€拷 锟斤拷 锟斤拷 锟届剮甑癸拷锟� 瑾橂獌霑� 锟诫惐鞓ｆ€拷';
 
             openMagicDoor();
             break;
@@ -1074,10 +1072,10 @@ function findIntersectionAndButtonHandler() {
             // Show bottom narration text
             document.getElementById('message').style.display = 'none';
             document.getElementById('narration-panel').style.display = 'flex';
-            document.getElementById('lbl-bottom').src = 'assets/bottom/lbl-knok.svg';
+            document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-knok.svg';
 
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '�명겕留뚯쑝濡� �됱옣怨� �대� �뺤씤';
+            document.getElementById('tts-text').innerHTML = '锟诫獏瓴曪霘憹婵★拷 锟诫惐鞓ｆ€拷 锟诫寑锟� 锟诫氦鞌�';
 
             // 4. Update buttons
             mesh.remove(btnOpenVideo);
@@ -1177,10 +1175,10 @@ function findIntersectionAndButtonHandler() {
             // Show bottom narration text
             document.getElementById('message').style.display = 'none';
             document.getElementById('narration-panel').style.display = 'flex';
-            document.getElementById('lbl-bottom').src = 'assets/bottom/lbl-move-basket.svg';
+            document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-move-basket.svg';
 
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '�ㅼ뼇�� �믪씠�� �앹옱猷� 蹂닿�';
+            document.getElementById('tts-text').innerHTML = '锟姐吋爰囷拷锟� 锟诫鞌狅拷锟� 锟届暪鞓辩尫锟� 韫傠嬁锟�';
 
             mesh.remove(btnOpenRightDoor);
 
@@ -1310,10 +1308,10 @@ function findIntersectionAndButtonHandler() {
             // Show bottom narration text
             document.getElementById('message').style.display = 'none';
             document.getElementById('narration-panel').style.display = 'flex';
-            document.getElementById('lbl-bottom').src = 'assets/bottom/lbl-uv.svg';
+            document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-uv.svg';
 
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '�됱옣怨좎냽 怨듦린泥�젙湲�';
+            document.getElementById('tts-text').innerHTML = '锟诫惐鞓ｆ€雰� 鎬摝毽帮В锟届牂婀诧拷';
 
             break;
           case 'UVClose':
@@ -1366,9 +1364,9 @@ function findIntersectionAndButtonHandler() {
             // Show bottom narration text
             document.getElementById('message').style.display = 'none';
             document.getElementById('narration-panel').style.display = 'flex';
-            document.getElementById('lbl-bottom').src = 'assets/bottom/lbl-folding.svg';
+            document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-folding.svg';
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '�섎컯�대굹 怨곗넡媛숈씠 遺��쇨� �� �앹옱猷� 蹂닿�';
+            document.getElementById('tts-text').innerHTML = '锟届剮旎拷雽€甑� 鎬硹雱″獩靾堨敔 閬猴拷锟届嚚锟� 锟斤拷 锟届暪鞓辩尫锟� 韫傠嬁锟�';
 
             break;
           case 'FoldingShelfClose':
@@ -1421,10 +1419,10 @@ function findIntersectionAndButtonHandler() {
             // Show bottom narration text
             document.getElementById('message').style.display = 'none';
             document.getElementById('narration-panel').style.display = 'flex';
-            document.getElementById('lbl-bottom').src = 'assets/bottom/lbl-multi-corner.svg';
+            document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-multi-corner.svg';
 
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '�꾩씠�� 移섏쫰�깆쓣 蹂닿�';
+            document.getElementById('tts-text').innerHTML = '锟疥京鞌狅拷锟� 绉混剰飓帮拷旯嗢摚 韫傠嬁锟�';
 
             break;
           case 'MultiCornerClose':
@@ -1477,10 +1475,10 @@ function findIntersectionAndButtonHandler() {
             // Show bottom narration text
             document.getElementById('message').style.display = 'none';
             document.getElementById('narration-panel').style.display = 'flex';
-            document.getElementById('lbl-bottom').src = 'assets/bottom/lbl-large-basket.svg';
+            document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-large-basket.svg';
 
             $('.scroll-left p').removeClass( 'on');
-            document.getElementById('tts-text').innerHTML = '�� �⑸웾�� �섎궔諛붽뎄��';
+            document.getElementById('tts-text').innerHTML = '锟斤拷 锟解懜鞗撅拷锟� 锟届剮甓旇珱攵诫巹锟斤拷';
 
             break;
           case 'LargeBasketClose':

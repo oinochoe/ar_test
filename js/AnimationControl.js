@@ -455,10 +455,10 @@ function proceedAnimation(clipName, _is3Dview) {
                 // Show bottom narration text
                 document.getElementById('message').style.display = 'none';
                 document.getElementById('narration-panel').style.display = 'flex';
-                document.getElementById('lbl-bottom').src = 'assets/bottom/lbl-filter.svg';
+                document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-filter.svg';
                 $('.scroll-left p').addClass('on');
                 document.getElementById('tts-text').innerHTML =
-                    '�꾨━移대낯 �꾪꽣+ : 以묎툑�� 7醫� (�섏�, ��, 鍮꾩냼, 移대뱶裕�, 泥�, �뚮（誘몃뒆, ��), �좉린�뷀븰臾쇱쭏 �� �좏빐臾쇱쭏 �쒓굅 / UF �꾪꽣 : 誘몄꽭�낆옄 諛� 諛뺥뀒由ъ븘 �쒓굅 / �ъ뒪�몄뭅蹂� �꾪꽣 : 湲고� �좏빐臾쇱쭏 �쒓굅';
+                    '锟疥鲸鈹佺Щ雽€雮� 锟疥惊杲�+ : 浠ル瑤韴戯拷锟� 7閱拷 (锟届剰锟�, 锟斤拷, 閸京雰�, 绉浑寑氡惰锟�, 铵ｏ拷, 锟诫毊锛堣獦氇冸拞, 锟斤拷), 锟届毽帮拷敕€敫拌嚲靽膘瓘 锟斤拷 锟届牍愯嚲靽膘瓘 锟届挀甑� / UF 锟疥惊杲� : 瑾橂獎杲拷雮嗢槃 璜涳拷 璜涬亥雬掔敱褗敫� 锟届挀甑� / 锟窖婋挭锟诫獎氕呰箓锟� 锟疥惊杲� : 婀碴碃锟� 锟届牍愯嚲靽膘瓘 锟届挀甑�';
 
                 // 2. Play sound for filter
                 filterSound.volume = 0.6;
@@ -1078,9 +1078,9 @@ function rotateModelBackside(_track) {
         // Show bottom narration text
         document.getElementById('message').style.display = 'none';
         document.getElementById('narration-panel').style.display = 'flex';
-        document.getElementById('lbl-bottom').src = 'assets/bottom/lbl-linear.svg';
+        document.getElementById('lbl-bottom').src = 'https://demo.letsee.io/confinity/assets/bottom/lbl-linear.svg';
         $('.scroll-left p').removeClass('on');
-        document.getElementById('tts-text').innerHTML = '�낃퀎 理쒖큹濡� 媛쒕컻�� LG DIOS �됱옣怨좎쓽 �듭떖湲곗닠';
+        document.getElementById('tts-text').innerHTML = '뭐라하노? 마산내려갈래?'
 
         // transparentMesh.add(btnLinearCompression);
         // btnLinearCompression.visible = true;
@@ -1123,9 +1123,9 @@ function rotateAndScale() {
     console.error(`isPAUSED >>> ${isPaused}`);
 
     // Change GUI
-    document.getElementById('btn-exterior').src = 'assets/menu/ico-exterior.svg';
-    document.getElementById('btn-inside').src = 'assets/menu/ico-inside.svg';
-    document.getElementById('btn-cooling').src = 'assets/menu/ico-cooling.svg';
+    document.getElementById('btn-exterior').src = 'https://demo.letsee.io/confinity/assets/menu/ico-exterior.svg';
+    document.getElementById('btn-inside').src = 'https://demo.letsee.io/confinity/assets/menu/ico-inside.svg';
+    document.getElementById('btn-cooling').src = 'https://demo.letsee.io/confinity/assets/menu/ico-cooling.svg';
 
     $('#tab-1').css('background', '#ffffff');
     $('#tab-1 p').css('color', '#9b9b9b');
@@ -1138,7 +1138,7 @@ function rotateAndScale() {
 
     document.getElementById('message').style.display = 'none';
     document.getElementById('narration-panel').style.display = 'none';
-    document.getElementById('btnRotate').src = 'assets/menu/btn-3-dtop-on.png';
+    document.getElementById('btnRotate').src = 'https://demo.letsee.io/confinity/assets/menu/btn-3-dtop-on.png';
     document.getElementById('bottom').style.display = 'flex';
     document.getElementById('controlPanel').style.display = 'flex';
 

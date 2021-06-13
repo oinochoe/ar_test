@@ -20,7 +20,7 @@ function createSmokePipeline(_track) {
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.font = '48px sans-serif';
-    ctx.fillText('�∽툗', 0, 0);
+    ctx.fillText('锟解埥韴�', 0, 0);
 
     texture = new THREE.CanvasTexture(ctx.canvas);
     texture.wrapS = THREE.RepeatWrapping;
@@ -54,7 +54,7 @@ function createSmokePipeline(_track) {
     ctxUp.textAlign = 'center';
     ctxUp.textBaseline = 'middle';
     ctxUp.font = '48px sans-serif';
-    ctxUp.fillText('�∽툗', 0, 0);
+    ctxUp.fillText('锟解埥韴�', 0, 0);
 
     textureUp = new THREE.CanvasTexture(ctxUp.canvas);
     textureUp.wrapS = THREE.RepeatWrapping;
@@ -365,7 +365,7 @@ function createSmokePipeline(_track) {
     nMax = geometry.attributes.position.count;
 
     // 7. Material
-    let smokeTexture = _track(new THREE.TextureLoader().load('./assets/fog10.png'));
+    let smokeTexture = _track(new THREE.TextureLoader().load('https://demo.letsee.io/confinity/assets/fog10.png'));
     let material = _track(
         new THREE.MeshBasicMaterial({
             // color: 0x00aee4,

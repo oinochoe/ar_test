@@ -16,7 +16,7 @@ loadingManager.onProgress = (item, loaded, total) => console.log(item, loaded, t
 
 // DRACO
 let dracoLoader = new THREE.DRACOLoader();
-dracoLoader.setDecoderPath( 'js/draco/' );
+dracoLoader.setDecoderPath('https://demo.letsee.io/confinity/js/draco/');
 // Optional: Pre-fetch Draco WASM/JS module.
 dracoLoader.preload();
 

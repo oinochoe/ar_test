@@ -2,7 +2,7 @@
   "uri":"qrcode.json",
   "qrCodeData": "https://frontdev.tistory.com",
   "physicalSize":{
-    "width": 63,
-    "height": 63
+    "width": 1000,
+    "height": 1000
   }
 }
